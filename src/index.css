@@ -1,0 +1,43 @@
+body {
+  margin: 0 auto;
+  padding: 1.25em;
+  max-width: 950px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: rgb(200, 42, 51);
+  background-color: rgb(240, 240, 230);
+  animation-duration: 4s;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+h1 {
+  /* text-shadow: 3px 3px 3px rgb(197,165,151);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3); */ 
+  font-size: 3em;
+  margin: 0.1em auto;
+}
+
+h2 {
+  /* text-shadow: 1px 1px rgba(59, 113, 64, 0.2);  */
+  color: rgb(115, 220, 175);
+  margin: 0.1em auto;
+}
+
+h3 {
+  color: rgb(64,80,58);
+}
+
+p {
+  color: rgb(64,80,58);
+}
+
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
