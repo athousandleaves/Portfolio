@@ -44,6 +44,10 @@ h2 {
   margin: 1em 0;
 }
 
+.projectList {
+  margin: 1em;
+}
+
 .githubLink {
   color: #a0a0a0;
   font-family: 'Inconsolata', monospace;
@@ -61,7 +65,7 @@ p {
 
 
 .App {
-  max-width: 950px;
+  max-width: 1050px;
   margin: 0 auto;
   padding: 1.5em;
 }
@@ -70,6 +74,17 @@ p {
   font-size: 3em;
 }
 
-div > a > img {
-  width: 20px;
+a > h2:hover {
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-name: hoverColor;
 }
+
+@keyframes hoverColor {
+  0%   { color: rgb(84, 209, 155); }
+  100% { color: rgb(101, 255, 188); }
+}
+
+/* a > h2:hover {
+  color: rgb(95, 248, 182);
+} */
