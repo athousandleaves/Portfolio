@@ -1,10 +1,7 @@
 body {
-  margin: 0 auto;
-  padding: 1.25em;
-  max-width: 950px;
   font-family: 'Nunito Sans', sans-serif;
   color: rgb(200, 42, 51);
-  background-color: rgb(255, 229, 187);
+  background-color: rgb(255, 232, 194);
   animation-duration: 4s;
   animation-name: fadein;
 }
@@ -15,18 +12,42 @@ body {
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0.1em auto;
+  font-size: 2.1em;
+  margin: 0.5em auto;
 }
 
 h2 {
   /* text-shadow: 1px 1px rgba(59, 113, 64, 0.2);  */
   color: rgb(84, 209, 155);
-  margin: 0.1em auto;
+  margin: 0.4em auto;
+  font-size: 1.8em;
+}
+
+.skillList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill {
+  text-align: center;
 }
 
 .projectName {
   text-decoration: none;
+}
+
+.projectDescription {
+  margin: 0.5em auto;
+}
+
+.projectItem {
+  margin: 1em 0;
+}
+
+.githubLink {
+  color: #a0a0a0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.1em;
 }
 
 h3 {
@@ -35,11 +56,12 @@ h3 {
 
 p {
   color: rgb(64,80,58);
+  font-size: 1.05em;
 }
 
 
 .App {
-  max-width: 800px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 1.5em;
 }
