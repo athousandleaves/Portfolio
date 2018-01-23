@@ -25,6 +25,10 @@ h2 {
   margin: 0.1em auto;
 }
 
+.projectName {
+  text-decoration: none;
+}
+
 h3 {
   color: rgb(64,80,58);
 }
@@ -40,6 +44,10 @@ p {
   padding: 1.5em;
 }
 
-.nick {
+.name {
   font-size: 3em;
+}
+
+div > a > img {
+  width: 20px;
 }
