@@ -19,7 +19,7 @@ export default class Projects extends Component {
       },
       {
         name: "Listener",
-        description: "A search app that utilizes the Last.fm API to find and display artists' top songs",
+        description: "A music search app that utilizes the Last.fm API to find and display artists' top songs. Each search generates YouTube links for each song and aggregates the links into a playlist.",
         link: "http://listener.surge.sh/",
         github: "https://github.com/athousandleaves/Listener",
         thumbnail: "img src"
@@ -34,16 +34,17 @@ export default class Projects extends Component {
     ];
     
     const projects = projectList.map((project) =>
-      <div>
+      <div className="projectItem">
         <a href={project.link} className="projectName"><h2>{project.name}</h2></a>
-        <a href={project.github}>{project.github}</a>
-        <p>{project.description}</p>
+        <a href={project.github} className="githubLink">{project.github}</a>
+        <p className="projectDescription">{project.description}</p>
       </div>
     );
+
     return (
       <div className="projects">
         <h1>Projects</h1>
-        {projects}
+        <div className="projectList">{projects}</div>
       </div>
     ) 
   }
