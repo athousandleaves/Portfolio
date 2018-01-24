@@ -53,8 +53,8 @@ export default class Skills extends Component {
       }
     ];
 
-    const skills = skillsList.map((skill) =>
-    <div className="skill">
+    const skills = skillsList.map((skill, index) =>
+    <div className="skill" key={index}>
       <p>{skill.title}</p>
     </div>
     )
