@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Skills from './components/skills';
 import Projects from './components/projects';
-import Experience from './components/experience';
 import Splash from './components/splash';
 
 class App extends Component {
@@ -11,7 +10,6 @@ class App extends Component {
         <Splash />
         <Projects />
         <Skills />
-        <Experience />
       </div>
     );
   }
