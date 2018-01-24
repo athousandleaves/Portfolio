@@ -19,8 +19,17 @@ h1 {
 h2 {
   /* text-shadow: 1px 1px rgba(59, 113, 64, 0.2);  */
   color: rgb(84, 209, 155);
-  margin: 0.4em auto;
-  font-size: 1.8em;
+  margin: 0.5em auto;
+  font-size: 1.9em;
+}
+
+hr {
+  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(169, 203, 176);
+    margin: 1em 0;
+    padding: 0; 
 }
 
 .skillList {
@@ -32,16 +41,27 @@ h2 {
   text-align: center;
 }
 
+.projectLink {
+  padding-bottom: 0.2em;  
+}
+
 .projectName {
   text-decoration: none;
+  display: inline;
+  margin: 1em 0;
+}
+
+.projectName > h2 {
+  margin: 2em 0;  
 }
 
 .projectDescription {
-  margin: 0.5em auto;
+  margin: 0.8em auto;
+  font-size: 0.9em;
 }
 
 .projectItem {
-  margin: 1em 0;
+  margin: 2em auto;
 }
 
 .projectList {
@@ -88,15 +108,23 @@ p {
 
 .App {
   max-width: 1050px;
-  margin: 0 auto;
-  padding: 0 2.5em;
+  margin: 2em auto;
+  padding: 0 3em;
+  display: grid;
+  grid-gap: 1.2em;
 }
 
 .name {
   font-size: 3em;
+  margin: 0 auto;
+}
+
+.subtitle {
+  margin: 0 auto;
 }
 
 a > h2 {
+  display: inline;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }

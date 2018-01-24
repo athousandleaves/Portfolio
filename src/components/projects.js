@@ -35,7 +35,9 @@ export default class Projects extends Component {
     
     const projects = projectList.map((project, index) =>
       <div className="projectItem" key={index}>
-        <a href={project.link} className="projectName"><h2>{project.name}</h2></a>
+        <div className="projectLink">
+        <a href={project.link} className="projectName"><h2>{project.name}</h2></a>          
+        </div>
         <a href={project.github} className="githubLink">{project.github}</a>
         <p className="projectDescription">{project.description}</p>
         <div className="projectThumb">
@@ -47,6 +49,7 @@ export default class Projects extends Component {
     return (
       <div className="projects">
         <h1>Projects</h1>
+        <hr />
         <div className="projectList">{projects}</div>
       </div>
     ) 

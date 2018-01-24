@@ -62,6 +62,7 @@ export default class Skills extends Component {
     return (
       <div className="skills">
         <h1>Skills</h1>
+        <hr />
         <div className="skillList">{skills}</div>
       </div>
     ) 
