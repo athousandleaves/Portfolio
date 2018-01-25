@@ -5,57 +5,59 @@ export default class Skills extends Component {
     const skillsList = [
       {
         title: "JavaScript (ES6)",
-        link: ""
+        link: "http://es6-features.org"
       },
       {
         title: "React",
-        link: ""
+        link: "https://reactjs.org/"
       },
       {
         title: "Node.js",
-        link: ""
+        link: "https://nodejs.org"
       },
       {
         title: "HTML5",
-        link: ""
+        link: "https://html.spec.whatwg.org"
       },
       {
         title: "CSS3",
-        link: ""
+        link: "https://developer.mozilla.org/en-US/docs/Web/CSS"
       },
       {
         title: "Sass",
-        link: ""
+        link: "http://sass-lang.com/"
       },
       {
         title: "TypeScript",
-        link: ""
+        link: "http://typescriptlang.org"
       },
       {
         title: "Webpack",
-        link: ""
+        link: "https://webpack.js.org/"
       },
       {
         title: "Express",
-        link: ""
+        link: "https://expressjs.com/"
       },
       {
         title: "jQuery",
-        link: ""
+        link: "https://jquery.com/"
       },
       {
         title: "MongoDB",
-        link: ""
+        link: "https://www.mongodb.com/"
       },
       {
         title: "SQL",
-        link: ""
+        link: "https://www.mysql.com/"
       }
     ];
 
     const skills = skillsList.map((skill, index) =>
     <div className="skill" key={index}>
-      <p>{skill.title}</p>
+      <a href={skill.link} className="skillLink">
+        <p>{skill.title}</p>
+      </a>
     </div>
     )
 

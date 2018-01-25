@@ -1,14 +1,26 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
   color: rgb(200, 42, 51);
-  background-color: rgb(255, 235, 202);
+  background-color: #f3dcb8;
   animation-duration: 4s;
   animation-name: fadein;
 }
 
+.App {
+  max-width: 1050px;
+  margin: 2em auto;
+  padding: 0 3em 3em 3em;
+  display: grid;
+  grid-gap: 1.2em;
+}
+
 @keyframes fadein {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 h1 {
@@ -25,11 +37,11 @@ h2 {
 
 hr {
   display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgb(169, 203, 176);
-    margin: 1em 0;
-    padding: 0; 
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(169, 203, 176);
+  margin: 1em 0;
+  padding: 0;
 }
 
 .skillList {
@@ -41,8 +53,20 @@ hr {
   text-align: center;
 }
 
-.projectLink {
-  padding-bottom: 0.2em;  
+.skillLink {
+  text-decoration: none;
+}
+
+.skillLink>p {
+  display: inline-block;
+  font-size: 1.3em;
+  font-weight: lighter;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.skillLink>p:hover {
+  color: rgb(132, 194, 129);
 }
 
 .projectName {
@@ -51,8 +75,8 @@ hr {
   margin: 1em 0;
 }
 
-.projectName > h2 {
-  margin: 2em 0;  
+.projectName>h2 {
+  margin: 2em 0;
 }
 
 .projectDescription {
@@ -66,23 +90,28 @@ hr {
 
 .projectList {
   margin: 1em;
+  display: grid;
+  grid-gap: .5em;
+}
+
+.projectList * {
+  margin: 0.75em auto;
 }
 
 .projectThumb {
   margin: 0 auto;
 }
 
-.projectThumb > img {
-  width: 60%;
-  border: 1px rgba(173, 255, 184, 0.8);
+.projectThumb>img {
+  width: 70%;
+  border: 1px solid rgba(34, 36, 38, .15);
   border-radius: 5px;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
-  /* margin: 0 5em; */
+  display: inherit;
 }
 
-.projectThumb >img:hover{
+.projectThumb>img:hover {
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
-  
 }
 
 .githubLink {
@@ -97,21 +126,12 @@ hr {
 }
 
 h3 {
-  color: rgb(64,80,58);
+  color: rgb(64, 80, 58);
 }
 
 p {
   color: rgb(66, 113, 49);
   font-size: 1.05em;
-}
-
-
-.App {
-  max-width: 1050px;
-  margin: 2em auto;
-  padding: 0 3em;
-  display: grid;
-  grid-gap: 1.2em;
 }
 
 .name {
@@ -123,13 +143,13 @@ p {
   margin: 0 auto;
 }
 
-a > h2 {
+a>h2 {
   display: inline;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
-a > h2:hover {
+a>h2:hover {
   color: rgb(101, 255, 188);
   /* box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1); */
 }
