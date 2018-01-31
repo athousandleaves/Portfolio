@@ -16,12 +16,20 @@ export default class Skills extends Component {
         link: "https://nodejs.org"
       },
       {
+        title: "Vue",
+        link: "https://vuejs.org/"
+      },
+      {
         title: "HTML5",
         link: "https://html.spec.whatwg.org"
       },
       {
         title: "CSS3",
         link: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      },
+      {
+        title: "Bootstrap",
+        link: "https://getbootstrap.com/"
       },
       {
         title: "Sass",
@@ -50,6 +58,10 @@ export default class Skills extends Component {
       {
         title: "SQL",
         link: "https://www.mysql.com/"
+      },
+      {
+        title: "Git",
+        link: "https://git-scm.com/"
       }
     ];
 
