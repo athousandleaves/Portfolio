@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Skills from './components/skills';
 import Projects from './components/projects';
-import Splash from './components/splash';
+import About from './components/about';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Splash />
+        <About />
         <Projects />
         <Skills />
       </div>

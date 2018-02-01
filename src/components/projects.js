@@ -11,6 +11,13 @@ export default class Projects extends Component {
         thumbnail: "https://i.imgur.com/qOIpjdu.png"
       },
       {
+        name: "Paletteer",
+        description: "A coding tutorial library that utilizes Mongoose and the YouTube API. Built with React.",
+        link: "https://limitless-springs-46654.herokuapp.com/",
+        github: "https://github.com/athousandleaves/Qtorial",
+        thumbnail: "https://i.imgur.com/qOIpjdu.png"
+      },
+      {
         name: "Pixelizer",
         description: "A pixel art generator utilizing CSS Grid",
         link: "http://pixelizer.surge.sh/",
@@ -35,11 +42,13 @@ export default class Projects extends Component {
     
     const projects = projectList.map((project, index) =>
       <div className="projectItem" key={index}>
+        <div className="projectChunk">
         <div className="projectLink">
         <a href={project.link} className="projectName"><h2>{project.name}</h2></a>          
         </div>
         <a href={project.github} className="githubLink">{project.github}</a>
         <p className="projectDescription">{project.description}</p>
+        </div>
         <div className="projectThumb">
           <img src={project.thumbnail} alt={project.name} className="projectPic"/>
         </div>
@@ -47,7 +56,7 @@ export default class Projects extends Component {
     );
 
     return (
-      <div className="projects">
+      <div className="projects" id="projects">
         <h1>Projects</h1>
         <hr />
         <div className="projectList">{projects}</div>

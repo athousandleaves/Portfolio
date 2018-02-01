@@ -7,9 +7,9 @@ body {
 }
 
 .App {
-  max-width: 1050px;
-  margin: 2em auto;
-  padding: 0 3em 3em 3em;
+  max-width: 1100px;
+  margin: 4em auto;
+  padding: 0.6em 3em 5em 3em;
   display: grid;
   grid-gap: 1.2em;
 }
@@ -39,9 +39,14 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid rgb(169, 203, 176);
+  border-top: 1px solid rgb(182, 228, 190);
   margin: 1em 0;
   padding: 0;
+}
+
+.elevator {
+  margin: 2em auto;
+  max-width: 900px;
 }
 
 .skillList {
@@ -86,16 +91,19 @@ hr {
 
 .projectItem {
   margin: 2em auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2.5em;
+}
+
+.projectChunk {
+  margin: 3em auto;
 }
 
 .projectList {
-  margin: 1em;
+  margin: 1.5em;
   display: grid;
-  grid-gap: .5em;
-}
-
-.projectList * {
-  margin: 0.75em auto;
+  grid-gap: 3em;
 }
 
 .projectThumb {
@@ -103,11 +111,13 @@ hr {
 }
 
 .projectThumb>img {
-  width: 70%;
+  width: 100%;
+  /* max-width: 100%; */
   border: 1px solid rgba(34, 36, 38, .15);
   border-radius: 5px;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
-  display: inherit;
+  display: block;
+  margin: 0 auto;
 }
 
 .projectThumb>img:hover {
@@ -121,6 +131,56 @@ hr {
   transition: color 0.5s;
 }
 
+.nav {
+  color: #a0a0a0;
+  font-family: 'Inconsolata', monospace;
+  top: 0; 
+  right: 0;
+  position: absolute;
+  margin: 2em 10em;
+  width: 35%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  transition: color 0.5s;
+}
+
+.nav > a {
+  color: #a0a0a0;
+  transition: color 0.5s;
+  display: inline;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgb(206, 206, 206);
+}
+
+.nav > a:hover {
+  color: #d2d2d2;
+}
+
+a.contact {
+  margin: 2em auto;
+  display: block;
+  width: 125px;
+  text-decoration: none;
+  border-radius: 3px;
+  color: rgb(61, 172, 111);
+  transition: color .5s;
+  background-color: rgb(212, 236, 201);
+  border: 1px solid rgba(34, 36, 38, .15);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  font-family: 'Nunito Sans', sans-serif;
+  /* font-weight: bolder; */
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-align: center;
+}
+
+a.contact:hover {
+  color: #b6b4ae;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
 .githubLink:hover {
   color: #d2d2d2;
 }
@@ -131,7 +191,7 @@ h3 {
 
 p {
   color: rgb(66, 113, 49);
-  font-size: 1.05em;
+  font-size: 1.1em;
 }
 
 .name {
@@ -147,6 +207,7 @@ a>h2 {
   display: inline;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
+  font-size: 2em;
 }
 
 a>h2:hover {

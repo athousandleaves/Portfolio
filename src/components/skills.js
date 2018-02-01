@@ -74,7 +74,7 @@ export default class Skills extends Component {
     )
 
     return (
-      <div className="skills">
+      <div className="skills" id="skills">
         <h1>Skills</h1>
         <hr />
         <div className="skillList">{skills}</div>
