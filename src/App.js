@@ -10,6 +10,9 @@ class App extends Component {
         <About />
         <Projects />
         <Skills />
+        <footer>
+          Nicholas Keeling, 2018.
+        </footer>
       </div>
     );
   }

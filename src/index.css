@@ -4,14 +4,15 @@ body {
   background-color: #fff1cb;
   animation-duration: 4s;
   animation-name: fadein;
+  position: relative;
 }
 
 .App {
   max-width: 1100px;
-  margin: 4em auto;
+  margin: 4em auto 0 auto;
   padding: 0.6em 3em 5em 3em;
   display: grid;
-  grid-gap: 1.2em;
+  grid-gap: 1.5em;
 }
 
 @keyframes fadein {
@@ -24,7 +25,7 @@ body {
 }
 
 h1 {
-  font-size: 2.1em;
+  font-size: 2.3em;
   margin: 0.5em auto;
 }
 
@@ -96,6 +97,8 @@ hr {
   grid-gap: 2.5em;
 }
 
+
+
 .projectChunk {
   margin: 3em auto;
 }
@@ -103,8 +106,25 @@ hr {
 .projectList {
   margin: 1.5em;
   display: grid;
-  grid-gap: 3em;
+  grid-gap: 6em;
 }
+
+.projectItem:nth-child(even) {
+  grid-template-columns: 2fr 1fr;
+}
+
+.projectItem:nth-child(even) > .projectThumb {
+  grid-column: 1;
+  grid-row: 2;
+
+}
+
+.projectItem:nth-child(even) > .projectChunk {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+
 
 .projectThumb {
   margin: 0 auto;
@@ -137,8 +157,8 @@ hr {
   top: 0; 
   right: 0;
   position: absolute;
-  margin: 2em 10em;
-  width: 35%;
+  margin: 0 6em;
+  width: 40%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   transition: color 0.5s;
@@ -169,7 +189,6 @@ a.contact {
   border: 1px solid rgba(34, 36, 38, .15);
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
   font-family: 'Nunito Sans', sans-serif;
-  /* font-weight: bolder; */
   padding: 0.5em 0.5em;
   font-size: 1.2em;
   cursor: pointer;
@@ -195,7 +214,7 @@ p {
 }
 
 .name {
-  font-size: 3em;
+  font-size: 4em;
   margin: 0 auto;
 }
 
@@ -213,4 +232,17 @@ a>h2 {
 a>h2:hover {
   color: rgb(101, 255, 188);
   /* box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1); */
+}
+
+footer {
+  color: rgb(84, 209, 155);
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.8em;
+  margin-top: 5em;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
