@@ -12,7 +12,7 @@ body {
   margin: 4em auto 0 auto;
   padding: 0.6em 3em 5em 3em;
   display: grid;
-  grid-gap: 1.5em;
+  grid-gap: 2em;
 }
 
 @keyframes fadein {
@@ -79,6 +79,7 @@ hr {
   text-decoration: none;
   display: inline;
   margin: 1em 0;
+  font-size: 1.3em;
 }
 
 .projectName>h2 {
@@ -104,9 +105,9 @@ hr {
 }
 
 .projectList {
-  margin: 1.5em;
+  margin: 2em 1.5em;
   display: grid;
-  grid-gap: 6em;
+  grid-gap: 4em;
 }
 
 .projectItem:nth-child(even) {
