@@ -12,10 +12,10 @@ export default class Projects extends Component {
       },
       {
         name: "Paletteer",
-        description: "A coding tutorial library that utilizes Mongoose and the YouTube API. Built with React.",
-        link: "https://limitless-springs-46654.herokuapp.com/",
-        github: "https://github.com/athousandleaves/Qtorial",
-        thumbnail: "https://i.imgur.com/qOIpjdu.png"
+        description: "An image parsing app that generates a palette of colors from a user-uploaded image. Built with the color-thief package.",
+        link: "http://paletteer.surge.sh/",
+        github: "https://github.com/athousandleaves/Paletteer",
+        thumbnail: "https://i.imgur.com/GWmsBlp.png"
       },
       {
         name: "Pixelizer",
