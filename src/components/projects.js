@@ -6,9 +6,9 @@ export default class Projects extends Component {
       {
         name: "Qtorial",
         description: "A coding tutorial library that utilizes Mongoose and the YouTube API. Built with React.",
-        link: "https://limitless-springs-46654.herokuapp.com/",
-        github: "https://github.com/athousandleaves/Qtorial",
-        thumbnail: "https://i.imgur.com/qOIpjdu.png"
+        link: "http://qtorial.surge.sh/",
+        github: "https://github.com/athousandleaves/react-qtorial",
+        thumbnail: "https://i.imgur.com/72pbRBp.png"
       },
       {
         name: "Paletteer",
@@ -17,13 +17,13 @@ export default class Projects extends Component {
         github: "https://github.com/athousandleaves/Paletteer",
         thumbnail: "https://i.imgur.com/GWmsBlp.png"
       },
-      {
-        name: "Pixelizer",
-        description: "A pixel art generator utilizing CSS Grid",
-        link: "http://pixelizer.surge.sh/",
-        github: "https://github.com/athousandleaves/Pixelizer", 
-        thumbnail: "https://i.imgur.com/c4y0KAn.png"
-      },
+      // {
+      //   name: "Pixelizer",
+      //   description: "A pixel art generator utilizing CSS Grid",
+      //   link: "http://pixelizer.surge.sh/",
+      //   github: "https://github.com/athousandleaves/Pixelizer", 
+      //   thumbnail: "https://i.imgur.com/c4y0KAn.png"
+      // },
       {
         name: "Listener",
         description: "A music search app that utilizes the Last.fm API to find and display artists' top songs. Each search generates YouTube links for each song and aggregates the links into a playlist.",
@@ -31,13 +31,14 @@ export default class Projects extends Component {
         github: "https://github.com/athousandleaves/Listener",
         thumbnail: "https://i.imgur.com/tmOmYUA.png"
       },
-      {
-        name: "Itemizer",
-        description: "A list-making app that utilizes the Web Speech API for asynchronous speech recognition",
-        link: "http://itemizer.surge.sh/",
-        github: "https://github.com/athousandleaves/Itemizer",
-        thumbnail: "https://i.imgur.com/qThfMJU.png"
-      }
+
+      // {
+      //   name: "Itemizer",
+      //   description: "A list-making app that utilizes the Web Speech API for asynchronous speech recognition",
+      //   link: "http://itemizer.surge.sh/",
+      //   github: "https://github.com/athousandleaves/Itemizer",
+      //   thumbnail: "https://i.imgur.com/qThfMJU.png"
+      // }
     ];
     
     const projects = projectList.map((project, index) =>

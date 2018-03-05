@@ -6,9 +6,6 @@ export default class About extends Component {
       <div className="about" id="about">
         <h1 className="name">Nicholas Keeling</h1>
         <div className="nav">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
           <a href="">Resume</a>
           <a href="https://github.com/athousandleaves">GitHub</a>
           <a href="https://www.linkedin.com/in/nicholas-keeling-169269b8/">LinkedIn</a>
