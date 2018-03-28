@@ -161,7 +161,7 @@ hr {
   margin: 0 6em;
   width: 30%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   transition: color 0.5s;
 }
 
